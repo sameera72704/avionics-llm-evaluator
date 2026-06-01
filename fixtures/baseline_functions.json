@@ -1,0 +1,42 @@
+[
+  {
+    "id":"task_001",
+    "description":"Write a C function that clamps a float altitude value between -500 and 50000 feet.",
+    "expected_signature":"float clamp_altitude(float altitude)",
+    "safety_keywords":["float","return","if"],
+    "forbidden_patterns":["malloc","free","printf"]
+  },
+
+  {
+    "id":"task_002",
+    "description":"Write a C function computing an 8-bit XOR checksum over a byte array.",
+    "expected_signature":"uint8_t xor_checksum(const uint8_t* data, size_t length)",
+    "safety_keywords":[
+      "uint8_t",
+      "for",
+      "return"
+    ],
+    "forbidden_patterns":[
+      "malloc",
+      "free",
+      "scanf"
+    ]
+  },
+
+  {
+    "id":"task_003",
+    "description":"Write a fixed-size ring buffer push function for uint16_t values.",
+    "expected_signature":"int ring_buffer_push(RingBuffer* rb, uint16_t value)",
+    "safety_keywords":[
+      "head",
+      "tail",
+      "count",
+      "return"
+    ],
+    "forbidden_patterns":[
+      "malloc",
+      "realloc",
+      "free"
+    ]
+  }
+]
